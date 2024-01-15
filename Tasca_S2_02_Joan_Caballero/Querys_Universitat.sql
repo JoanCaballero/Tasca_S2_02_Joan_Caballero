@@ -69,7 +69,7 @@ select  p.apellido1, p.apellido2, p.nombre, d.nombre
 from persona p
 right join profesor pr on p.id =  pr.id_profesor
 left join departamento d on pr.id_departamento = d.id
-order by p.apellido1, p.apellido2, p.nombre; 
+order by d.nombre, p.apellido1, p.apellido2, p.nombre; 
 
 -- 2 LEFT-RIGHT JOIN
 select  p.apellido1, p.apellido2, p.nombre
